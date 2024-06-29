@@ -1,0 +1,99 @@
+
+.s__heading {
+    text-align: center;
+    font-weight: bold;
+}
+.s__container {
+    display: flex;
+    margin-top: 80px;
+    width: 100%;
+}
+section:nth-child(odd) {
+    background-color: azure;
+}
+section:nth-child(even) {
+    background-color: beige;
+}
+.s__image {
+    width: 50%;
+    margin-right: 5%;
+    min-height: 600px;
+}
+#s__about-image {
+    @include bgCenter;
+    background-image: url("../img/about-img.jpg");
+}
+#s__servive-image {
+    @include bgCenter;
+    background-image: url("../img/service-img.jpg");
+}
+#s__recruit-image {
+    @include bgCenter;
+    background-image: url("../img/recruit-img.jpg");
+}
+#s__interview-image {
+    @include bgCenter;
+    background-image: url("../img/interview-img.jpg");
+    margin: 0;
+}
+#section__contact {
+    @include bgCenter;
+    @include flexCenter;
+    flex-direction: column;
+    background-image: url("../img/contact-img.jpg");
+    color: #fff;
+    text-align: center;
+    min-height: 600px;
+}
+
+.s__text {
+    width: 40%;
+    margin: auto 0;
+}
+
+.s__lead--text {
+    @include lineHeight(32);
+    margin: 50px auto 0;
+    @include fontSize(14)
+}
+.s__servicename {
+    @include fontSize(18);
+    margin-top: 20px;
+    font-weight: bold;
+}
+#section__address {
+    padding: 0;
+}
+.address-left {
+    @include bgCenter;
+    background-image: url("../img/address-img.jpg");
+}
+.address-right {
+    @include bgCenter;
+    position: relative;
+   
+}
+
+@media (max-width:768px) {
+    .s__container {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .s__image {
+        width: 100%;
+        min-height: 400px;
+        margin: 0;
+    }
+    .s__text {
+        margin-top: 50px;
+        width: 90%;
+        padding: 0 5%;
+    }
+    .s__lead--text {
+        @include fontSize(12);
+    }
+    #section__contact {
+        min-height: 400px;
+    }
+}
+

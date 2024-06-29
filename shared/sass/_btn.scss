@@ -1,0 +1,35 @@
+.btn--white {
+    @include btnDefault;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 25px;
+    margin: 50px auto 0;
+}
+.btn--white:hover {
+    background-color: #ccc;
+    transition: .3s;
+}
+.btn--black {
+    @include btnDefault;
+    background-color: #333;
+    color: #fff;
+    margin-top: 50px;
+
+}
+#section__recruit > .btn--black {
+    width: calc(50% - 35px);
+    margin: 30px 0 0 0;
+}
+.btn--black:hover {
+    opacity: .7;
+    transition: .3s;
+}
+.flexbox50 > .btn--black {
+    text-align: left;
+    margin-left: 0;
+}
+.btn--flex {
+    gap:20px;
+    display: flex;
+
+}

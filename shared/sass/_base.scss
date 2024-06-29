@@ -1,0 +1,64 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: 320px;
+    padding: 0px;
+    line-height: 1.5;
+    font-family: serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+main {
+    width: 100%;
+}
+section {
+    padding:5% 0;
+}
+
+.-shadow {
+    text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000; /* シャドウを利用して外枠効果を作成 */
+}
+.flex-container {
+    display: flex;
+    min-height: 600px;
+}
+.flexbox50 {
+    width: 50%;
+    padding: 2.5%;
+}
+@media(max-width:768px) {
+    .flex-container {
+        min-height: 400px;
+    }
+    .flexbox50 {
+        width: 100%;
+    }
+}
+
+.flexbox50 >.s__heading {
+    text-align: left;
+}
+address {
+    margin-top: 50px;
+}

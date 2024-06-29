@@ -1,0 +1,49 @@
+/* フォーム全体のスタイル */
+.s__form {
+    max-width: 600px; /* フォームの最大幅 */
+    margin: 0 auto; /* 中央揃え */
+    padding: 20px; /* 内側の余白 */
+    background-color: #f9f9f9; /* 背景色 */
+    border: 1px solid #ccc; /* 枠線 */
+    border-radius: 4px; /* 角丸 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* ドロップシャドウ */
+}
+
+/* 入力フィールドとラベルのスタイル */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* 幅100% */
+    padding: 10px; /* 内側のパディング */
+    font-size: 16px; /* フォントサイズ */
+    border: 1px solid #ccc; /* 枠線 */
+    border-radius: 4px; /* 角丸 */
+    box-sizing: border-box; /* ボックスサイズを調整 */
+    resize: vertical; /* テキストエリアの垂直リサイズ */
+}
+
+/* 送信ボタンのスタイル */
+button[type="submit"] {
+    background-color: #007bff; /* 背景色 */
+    color: white; /* テキスト色 */
+    border: none; /* 枠線なし */
+    padding: 10px 20px; /* パディング */
+    font-size: 16px; /* フォントサイズ */
+    border-radius: 4px; /* 角丸 */
+    cursor: pointer; /* カーソル */
+    transition: background-color 0.3s ease; /* ホバー時のトランジション */
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* ホバー時の背景色 */
+}

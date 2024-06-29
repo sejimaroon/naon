@@ -1,0 +1,126 @@
+header {
+    box-sizing: border-box;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    padding: 0 0 0 5%;
+    margin: 0;
+    background-color:transparent;
+    z-index: 10;
+    color: #fff;
+}
+
+#site__title {
+    font-size:32px; 
+    margin: 0;
+}
+#site__title a {
+    color: #fff;
+}
+
+#site__title:hover {
+    opacity: .8;
+}
+
+#nav__list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 80px;
+    margin-right: 5%;
+}
+
+#nav__list li {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    margin: 0;
+    padding: 0 10px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+#nav__list li:hover {
+    background-color: #333;
+    transition: .3s;
+}
+
+#nav__list a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid #ddd;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.hamburger .bar {
+    width: 100%;
+    height: 3px;
+    background-color: #ddd;
+    border: 1px solid #fff;
+    transition: all 0.3s;
+
+}
+
+@media (max-width: 768px) {
+    #site__title a {
+        font-size: 24px;
+    }
+
+    #nav__list {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 1);
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    #nav__list.active {
+        transform: translateX(0);
+    }
+    #nav__list li:hover {
+        background-color: #000;
+        opacity: .7;
+        transition: .3s;
+    }
+    .hamburger {
+        display: flex;
+    }
+
+    #global-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    #nav__list li {
+        margin: 20px 0;
+    }
+
+    #nav__list a {
+        color: #fff;
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,33 @@
+.m-0 {
+    margin: 0 !important;
+}
+.p-0 {
+    padding: 0 !important;
+}
+.pb-0 {
+    padding-bottom: 0 !important;
+}
+.bg-black {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+.bg-black:hover {
+    opacity: .7;
+}
+.row-reverse > .s__text {
+    width: 45%  !important;
+}
+@media(max-width:768px) {
+    .sp-m0 {
+        margin: 0 !important;
+    }
+   
+}
+@media(min-width:768.1px) {
+    .pc-m0 {
+        margin: 0 !important;
+    }
+    .row-reverse {
+        flex-direction:row-reverse !important;
+    }
+}
