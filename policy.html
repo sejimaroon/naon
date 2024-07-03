@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>株式会社NAON</title>
+    <title>拠点・アクセス | 株式会社NAON</title>
     <link rel="stylesheet" href="./shared/css/all.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
@@ -81,68 +81,70 @@
             </ul>
         </nav>
     </header>
-    <div id="hero__image">
-        <p id="hero__text">お問い合わせ</p>
+    <div id="about__mv" class="mv">
+        <div class="mv__text">プライバシーポリシー</div>
     </div>
     <main>
-        <form action="submit-contact-form.php" method="POST" class="contact-form">
-        <div class="form-group">
-            <label for="contact-type">お問い合わせの種類<span class="required-mark">*</span></label><br>
-            <input type="radio" id="inquiry-type1" name="inquiry-type" value="一般お問い合わせ">
-            <label for="inquiry-type1">一般お問い合わせ</label><br>
-            <input type="radio" id="inquiry-type2" name="inquiry-type" value="商品について">
-            <label for="inquiry-type2">事業について</label><br>
-            <input type="radio" id="inquiry-type3" name="inquiry-type" value="その他">
-            <label for="inquiry-type3">その他</label><br>
-        </div>
-        <div class="form-group">
-            <label for="name">名前<span class="required-mark">*</span></label><br>
-            <input type="text" id="name" name="name" required><br>
-        </div>
-        <div class="form-group">
-            <label for="kana">フリガナ<span class="required-mark">*</span></label><br>
-            <input type="text" id="kana" name="kana" required><br>
-        </div>
-        <div class="form-group">
-            <label for="company">会社名</label><br>
-            <input type="text" id="company" name="company"><br>
-        </div>
-        <div class="form-group">
-            <label for="email">メールアドレス<span class="required-mark">*</span></label><br>
-            <input type="email" id="email" name="email" required><br>
-        </div>
-        <div class="form-group">
-            <label for="phone">電話番号<span class="required-mark">*</span></label><br>
-            <input type="tel" id="phone" name="phone" required><br>
-        </div>
-        <div class="form-group">
-            <label>何を見て当社を知りましたか？<span class="required-mark">*</span></label><br>
-            <input type="checkbox" id="source1" name="source[]" value="ウェブサイト">
-            <label for="source1">ウェブサイト</label><br>
-            <input type="checkbox" id="source2" name="source[]" value="SNS">
-            <label for="source2">SNS</label><br>
-            <input type="checkbox" id="source3" name="source[]" value="口コミ">
-            <label for="source3">口コミ</label><br>
-            <input type="checkbox" id="source4" name="source[]" value="その他">
-            <label for="source4">その他</label><br>
-        </div>
-        <div class="form-group">
-            <label for="message">お問い合わせ内容<span class="required-mark">*</span></label><br>
-            <textarea id="message" name="message" rows="4" required></textarea><br>
-        </div>
-        <div class="form-group">
-            <input type="checkbox" id="privacy" name="privacy" required>
-            <label for="privacy"><a class="link-policy" href="policy.html">プライバシーポリシー</a>に同意する</label><br>
-        </div>
-        <div class="form-group">
-            <button type="submit">送信する</button>
-        </div>
-    </form>
-        <!--
-    <script src="https://ssl.form-mailer.jp/formfiles/js/embed.js"></script>
-    <div class="formmailer-embed" data-form-hash="b92d61e6826896" data-form-host="ssl.form-mailer.jp"></div>
-    -->
-
+        <nav class="row-nav-1">
+            <ul>
+                <li>
+                    <a href="top.html">HOME</a>
+                </li>
+                <li>
+                    ⇀
+                </li>
+                <li>
+                    <a href="about.html">NAONについて</a>
+                </li>
+                <li>
+                    ⇀
+                </li>
+                <li>
+                    プライバシーポリシー
+                </li>
+            </ul>
+        </nav>
+        <section class="basic--section lh-2">
+            <h2 class="basic__heading">個人情報保護方針</h2>
+            <p class="mtb-50">当社は、以下のとおり個人情報保護方針を定め、個人情報保護の仕組みを構築し、全従業員に個人情報保護の重要性の認識と取組みを徹底させることにより、個人情報の保護を推進致します。</p>
+            <h3 class="mtb-50">個人情報の管理</h3>
+            <p class="mtb-30">当社は、お客さまの個人情報を正確かつ最新の状態に保ち、個人情報への不正アクセス・紛失・破損・改ざん・漏洩などを防止するため、セキュリティシステムの維持・管理体制の整備・社員教育の徹底等の必要な措置を講じ、安全対策を実施し個人情報の厳重な管理を行います。</p>
+            <h3 class="mtb-50">個人情報の利用目的</h3>
+            <p class="mtb-30">本ウェブサイトでは、お客さまからのお問い合わせ時に、お名前、e-mailアドレス、電話番号等の個人情報をご登録いただく場合がございますが、これらの個人情報はご提供いただく際の目的以外では利用いたしません。お客さまからお預かりした個人情報は、当社からのご連絡や業務のご案内やご質問に対する回答として、電子メールや資料のご送付に利用いたします。</p>
+            <h3 class="mtb-50">個人情報の第三者への開示・提供の禁止</h3>
+            <p class="mtb-30">当社は、お客さまよりお預かりした個人情報を適切に管理し、次のいずれかに該当する場合を除き、個人情報を第三者に開示いたしません。</p>
+            <ul class="mtb-30">
+                <li>・ お客さまの同意がある場合</li>
+                <li>・ お客さまが希望されるサービスを行なうために当社が業務を委託する業者に対して開示する場合</li>
+                <li>・ 法令に基づき開示することが必要である場合</li>
+            </ul>
+            <h3 class="mtb-50">ご本人の照会</h3>
+            <p class="mtb-30">お客さまがご本人の個人情報の照会・修正・削除などをご希望される場合には、ご本人であることを確認の上、対応させていただきます。</p>
+            <h3 class="mtb-50">法令、規範の遵守と見直し</h3>
+            <p class="mtb-30">当社は、保有する個人情報に関して適用される日本の法令、その他規範を遵守するとともに、本ポリシーの内容を適宜見直し、その改善に努めます。</p>
+            <h3 class="mtb-50">お問い合わせ</h3>
+            <p class="mtb-30">当社の個人情報の取り扱いに関するお問い合わせは下記までご連絡ください。</p>
+            <p>株式会社NAON 代表取締役　かりん<br>〒761-0000<br>香川県高松市らへん</p>
+        </section>
+        <nav class="row-nav-2">
+            <ul>
+                <li>
+                    ↼
+                </li>
+                <li>
+                    <a href="about.html">NAONについて</a>
+                </li>
+            </ul>
+        </nav>
+        <section id="section__contact">
+            <h2 class="s__heading -shadow">CONTACT</h2>
+            <p class="s__lead--text -shadow">
+                お問い合わせはこちらから<br>営業時間:9:00 ～ 18:00(土日祝祭日休)
+            </p>
+            <a class="btn--black" href="#">
+                お問い合わせ
+            </a>
+        </section>
     </main>
     <footer>
         <div class="footer-flex">

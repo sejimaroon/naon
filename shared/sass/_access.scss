@@ -1,0 +1,11 @@
+#access > .flex-container {
+    min-height: 400px;
+}
+
+.access--left {
+    @include bgCenter;
+    background-image: url(../img/access-img.jpg);
+}
+.access-map {
+    margin-top: 80px;
+}

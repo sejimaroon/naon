@@ -1,49 +1,74 @@
-/* フォーム全体のスタイル */
-.s__form {
-    max-width: 600px; /* フォームの最大幅 */
-    margin: 0 auto; /* 中央揃え */
-    padding: 20px; /* 内側の余白 */
-    background-color: #f9f9f9; /* 背景色 */
-    border: 1px solid #ccc; /* 枠線 */
-    border-radius: 4px; /* 角丸 */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* ドロップシャドウ */
+form {
+    width: 100%;
+    padding: 0 5%;
 }
 
-/* 入力フィールドとラベルのスタイル */
-.form-group {
-    margin-bottom: 20px;
+.contact-form {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px 5%;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
 }
 
-label {
-    display: block;
+/* フォーム内の各要素のスタイル */
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
     font-weight: bold;
-    margin-bottom: 5px;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%; /* 幅100% */
-    padding: 10px; /* 内側のパディング */
-    font-size: 16px; /* フォントサイズ */
-    border: 1px solid #ccc; /* 枠線 */
-    border-radius: 4px; /* 角丸 */
-    box-sizing: border-box; /* ボックスサイズを調整 */
-    resize: vertical; /* テキストエリアの垂直リサイズ */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
 }
 
-/* 送信ボタンのスタイル */
-button[type="submit"] {
-    background-color: #007bff; /* 背景色 */
-    color: white; /* テキスト色 */
-    border: none; /* 枠線なし */
-    padding: 10px 20px; /* パディング */
-    font-size: 16px; /* フォントサイズ */
-    border-radius: 4px; /* 角丸 */
-    cursor: pointer; /* カーソル */
-    transition: background-color 0.3s ease; /* ホバー時のトランジション */
+.contact-form textarea {
+    resize: vertical;
 }
 
-button[type="submit"]:hover {
-    background-color: #0056b3; /* ホバー時の背景色 */
+.contact-form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.contact-form button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* 必須マークのスタイル */
+.contact-form .required-mark {
+    color: red;
+    margin-left: 5px;
+}
+.link-policy {
+    border-bottom: 1px solid #000;
+    &:hover {
+        opacity: .7;
+    }
+}
+
+/* フォームメーラー */
+.powered {
+    display: none;
 }

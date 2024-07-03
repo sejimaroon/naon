@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>株式会社NAON</title>
+    <title>NAONについて | 株式会社NAON</title>
     <link rel="stylesheet" href="./shared/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css">
 </head>
@@ -81,68 +81,62 @@
             </ul>
         </nav>
     </header>
-    <div id="hero__image">
-        <p id="hero__text">お問い合わせ</p>
+    <div id="about__mv" class="mv">
+        <div class="mv__text">NAONについて</div>
     </div>
     <main>
-        <form action="submit-contact-form.php" method="POST" class="contact-form">
-        <div class="form-group">
-            <label for="contact-type">お問い合わせの種類<span class="required-mark">*</span></label><br>
-            <input type="radio" id="inquiry-type1" name="inquiry-type" value="一般お問い合わせ">
-            <label for="inquiry-type1">一般お問い合わせ</label><br>
-            <input type="radio" id="inquiry-type2" name="inquiry-type" value="商品について">
-            <label for="inquiry-type2">事業について</label><br>
-            <input type="radio" id="inquiry-type3" name="inquiry-type" value="その他">
-            <label for="inquiry-type3">その他</label><br>
-        </div>
-        <div class="form-group">
-            <label for="name">名前<span class="required-mark">*</span></label><br>
-            <input type="text" id="name" name="name" required><br>
-        </div>
-        <div class="form-group">
-            <label for="kana">フリガナ<span class="required-mark">*</span></label><br>
-            <input type="text" id="kana" name="kana" required><br>
-        </div>
-        <div class="form-group">
-            <label for="company">会社名</label><br>
-            <input type="text" id="company" name="company"><br>
-        </div>
-        <div class="form-group">
-            <label for="email">メールアドレス<span class="required-mark">*</span></label><br>
-            <input type="email" id="email" name="email" required><br>
-        </div>
-        <div class="form-group">
-            <label for="phone">電話番号<span class="required-mark">*</span></label><br>
-            <input type="tel" id="phone" name="phone" required><br>
-        </div>
-        <div class="form-group">
-            <label>何を見て当社を知りましたか？<span class="required-mark">*</span></label><br>
-            <input type="checkbox" id="source1" name="source[]" value="ウェブサイト">
-            <label for="source1">ウェブサイト</label><br>
-            <input type="checkbox" id="source2" name="source[]" value="SNS">
-            <label for="source2">SNS</label><br>
-            <input type="checkbox" id="source3" name="source[]" value="口コミ">
-            <label for="source3">口コミ</label><br>
-            <input type="checkbox" id="source4" name="source[]" value="その他">
-            <label for="source4">その他</label><br>
-        </div>
-        <div class="form-group">
-            <label for="message">お問い合わせ内容<span class="required-mark">*</span></label><br>
-            <textarea id="message" name="message" rows="4" required></textarea><br>
-        </div>
-        <div class="form-group">
-            <input type="checkbox" id="privacy" name="privacy" required>
-            <label for="privacy"><a class="link-policy" href="policy.html">プライバシーポリシー</a>に同意する</label><br>
-        </div>
-        <div class="form-group">
-            <button type="submit">送信する</button>
-        </div>
-    </form>
-        <!--
-    <script src="https://ssl.form-mailer.jp/formfiles/js/embed.js"></script>
-    <div class="formmailer-embed" data-form-hash="b92d61e6826896" data-form-host="ssl.form-mailer.jp"></div>
-    -->
-
+        <nav class="row-nav-1">
+           <ul>
+                <li>
+                    <a href="top.html">HOME</a>
+                </li>
+                <li>
+                    ⇀
+                </li>
+                <li>
+                    NAONについて
+                </li>
+           </ul> 
+        </nav>
+        <section class="basic--section">
+            <h2 class="s__heading ta-center">男性優位な社会を変える。</h2>
+            <p class="s__lead--text ta-center">
+                代表・かりん（24歳学生）のそんな強い思いによって<br>
+                創設された株式会社NAONは、<br>
+                ジェンダー平等と多様性を推進する革新的な企業です。<br>
+                NAONは、女性の声を社会に反映させ、<br>
+                全ての人が公平に機会を得られる未来を目指しています。<br>
+                性別に関係なく、個々の能力と才能を最大限に引き出す環境を提供し、<br>
+                多様な視点を持つチームが創造的で持続可能なソリューションを生み出します。<br>
+                NAONは、ジェンダーの壁を打破し、<br>
+                真にインクルーシブな社会を築くためのリーダーとして、<br>
+                未来を切り開いていきます。
+            </p>
+            <div class="mission">
+                <span class="sub">MISSION</span><br>
+                <span class="main">男性から社会を取り戻す</span>
+            </div>
+            <div class="btn__three--flex">
+                <a class="btn--black" href="company.html">
+                    会社概要 
+                </a>
+                <a class="btn--black" href="access.html">
+                    拠点・アクセス 
+                </a>
+                <a class="btn--black" href="faq.html">
+                    よくあるご質問 
+                </a>
+            </div>
+        </section>
+        <section id="section__contact" class="mt-80">
+            <h2 class="s__heading -shadow">CONTACT</h2>
+            <p class="s__lead--text -shadow">
+                お問い合わせはこちらから<br>営業時間:9:00 ～ 18:00(土日祝祭日休)
+            </p>
+            <a class="btn--black" href="#">
+                お問い合わせ 
+            </a>
+        </section>
     </main>
     <footer>
         <div class="footer-flex">

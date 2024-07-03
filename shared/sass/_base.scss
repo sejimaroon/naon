@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -31,7 +35,9 @@ main {
 section {
     padding:5% 0;
 }
-
+.right {
+    content: "\e910";
+}
 .-shadow {
     text-shadow: 
     -1px -1px 0 #000,  
@@ -43,22 +49,35 @@ section {
     display: flex;
     min-height: 600px;
 }
-.flexbox50 {
+.flexbox-50 {
     width: 50%;
-    padding: 2.5%;
+    padding: 5% 2.5%;
 }
 @media(max-width:768px) {
     .flex-container {
         min-height: 400px;
     }
-    .flexbox50 {
+    .flexbox-50 {
         width: 100%;
+        min-height: 300px;
+        padding: 5%;
     }
 }
 
-.flexbox50 >.s__heading {
+.flexbox-50 >.s__heading {
     text-align: left;
 }
 address {
-    margin-top: 50px;
+    margin: 30px 0;
+}
+.sub {
+    font-size: 24px;
+    font-weight: 500;
+}
+.main {
+    font-size: 28px;
+    font-weight: 400;
+}
+.bg-glay {
+    background-color: #ccc;
 }

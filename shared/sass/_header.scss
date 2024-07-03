@@ -8,33 +8,44 @@ header {
     height: 80px;
     padding: 0 0 0 5%;
     margin: 0;
-    background-color:transparent;
+    background-color: transparent;
     z-index: 10;
     color: #fff;
 }
 
 #site__title {
-    font-size:32px; 
+    font-size: 32px;
     margin: 0;
+    white-space: nowrap;
+    z-index: 10000;
 }
+
 #site__title a {
     color: #fff;
 }
 
 #site__title:hover {
-    opacity: .8;
+    opacity: .7;
 }
 
-#nav__list {
+#nav__list--sp {
+    display: none;
+}
+#nav__list--pc {
+
     display: flex;
     align-items: center;
     list-style: none;
+    justify-content: space-between;
     height: 80px;
-    margin-right: 5%;
+    padding: 0;
+    margin: 0;
+
 }
 
-#nav__list li {
+#nav__list--pc li {
     display: flex;
+    position: relative;
     align-items: center;
     height: 80px;
     margin: 0;
@@ -43,84 +54,186 @@ header {
     cursor: pointer;
 }
 
-#nav__list li:hover {
+#nav__list--pc li:hover {
     background-color: #333;
     transition: .3s;
 }
 
-#nav__list a {
+#nav__list--pc a {
+    position: relative;
     text-decoration: none;
     font-weight: bold;
     color: #fff;
+    text-align: center;
 }
+
+
+#nav__list--pc > li {
+    position: relative;
+}
+
+#nav__list--pc .submenu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    /* Adjust this to position the submenu right below the main menu item */
+    list-style: none;
+    width: 168px;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+    color: #fff;
+    z-index: 1;
+}
+
+#nav__list--pc .submenu li {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border: 1px solid #fff;
+    height: 40px;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    &:hover {
+        opacity: .5;
+    }
+}
+
+
 
 .hamburger {
     display: none;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 40px;
-    height: 30px;
-    background: transparent;
-    border: 1px solid #ddd;
-    padding: 5px;
-    cursor: pointer;
-    z-index: 100;
 }
 
-.hamburger .bar {
-    width: 100%;
-    height: 3px;
-    background-color: #ddd;
-    border: 1px solid #fff;
-    transition: all 0.3s;
 
-}
 
 @media (max-width: 768px) {
+    .header {
+        padding: 0 5%;
+    }
+
     #site__title a {
         font-size: 24px;
     }
+    .hamburger {
 
-    #nav__list {
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40px;
+    height: 28px;
+    background: transparent;
+    border: 1px solid #bbb;
+    cursor: pointer;
+    z-index: 100;
+        display: flex;
+        position: fixed;
+        top: 24px;
+        right: 5%;
+        z-index: 1001;
+        cursor: pointer;
+    }
+    .hamburger .bar {
+        width: 100%;
+        height: 4px;
+        background-color: #333;
+        border: 1px solid #fff;
+        transition: all 0.3s;
+    
+    }
+    #nav__list--pc {
+        display: none;
+    }
+    #nav__list--sp {
         position: fixed;
         top: 0;
         right: 0;
-        height: 100%;
+        display: flex;
+        min-height: 100%;
         width: 100%;
         margin: 0;
+        padding:0;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
-        background-color: rgba(0, 0, 0, 1);
+        align-items: center; 
+        background-color: rgba(0, 0, 0, .7);
         transform: translateX(100%);
         transition: transform 0.3s ease-in-out;
+        z-index: 1000;
+        padding: 0;
+        box-sizing: border-box;
     }
 
-    #nav__list.active {
+    #nav__list--sp.active {
         transform: translateX(0);
     }
-    #nav__list li:hover {
-        background-color: #000;
-        opacity: .7;
-        transition: .3s;
-    }
-    .hamburger {
-        display: flex;
-    }
 
-    #global-nav {
+    .spnav-mainmenu {
+        list-style: none;
+        width: calc(100% - 2px);
+        
+        cursor: pointer;
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        padding: 10px;
+        justify-content: space-between;
+        padding: 10px 5%;
+        border: 1px solid #fff;
     }
 
-    #nav__list li {
-        margin: 20px 0;
+    
+    .spnav-mainmenu.active i {
+        transform: rotate(180deg); /* アイコンを180度回転させる */
     }
-
-    #nav__list a {
+    .spnav-mainmenu:hover {
+        background-color: #000;
+    }
+    #nav__list--sp a {
         color: #fff;
-        font-size: 24px;
+        font-size: 16px;
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        padding: 0;
     }
-}
+
+    
+    
+        #nav__list--sp .submenu {
+            display: none; /* デフォルトで全てのサブメニューを非表示にする */
+            width: calc(100% - 2px);
+            box-sizing: border-box;
+            flex-direction: column;
+            background-color: #333;
+            border: solid 1px #fff;
+            list-style: none;
+            padding: 0;
+        }
+    
+
+        #nav__list--sp .submenu li {
+            display: flex;
+            align-items: center;
+            border-top: 1px solid #fff;
+            width: 100%;
+     
+            padding: 0 5%;
+            
+        }
+    
+        #nav__list--sp .submenu a {
+            color: #fff;
+            font-size: 16px;
+            padding: 10px 20px;
+            text-decoration: none;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        #nav__list--sp .submenu li:hover {
+            background-color: #aaa;
+        }
+    }
+    

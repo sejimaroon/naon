@@ -1,0 +1,95 @@
+.faq-area {
+  background-color: antiquewhite;
+  padding: 5%;
+}
+
+.qa-box {
+  margin-top: 30px;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 10px 50px;
+  text-align: left;
+}
+
+.question,
+.answer {
+  @include fontSize(18);
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  transition: .3s;
+  font-weight: bold;
+}
+
+.question:hover {
+  opacity: .7;
+}
+
+.question::after,
+.answer::after {
+  @include fontSize(20);
+  position: absolute;
+  left: -30px;
+  content: "Q.";
+}
+
+.question::after {
+  content: "Q.";
+}
+
+.answer::after {
+  top: 0;
+  content: "A.";
+}
+
+.qa {
+  align-items: center;
+  flex-direction: row;
+  color: #333;
+  margin-right: 10px;
+}
+
+.toggle-btn {
+  position: absolute;
+  right: -20px;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  color: #000;
+  transition: transform 0.3s ease;
+}
+
+.answer {
+  display: none;
+}
+
+.question::after.open {
+  transform: rotate(180deg);
+  /* .openクラスが追加されたときのアイコンの回転 */
+}
+
+@media(max-width: 768px) {
+  .qa-box {
+    margin-top: 30px;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 10px 40px;
+    text-align: left;
+  }
+
+  .question,
+  .answer {
+    @include fontSize(12);
+  }
+  .toggle-btn {
+    right: -20px;
+  }
+  .question::after,
+  .answer::after {
+    @include fontSize(18);
+    position: absolute;
+    left: -20px;
+
+  }
+}

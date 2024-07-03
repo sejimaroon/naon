@@ -1,0 +1,25 @@
+#section__company-overview {
+    padding: 0 5%;
+    .s__heading {
+        margin-top: 80px;
+        text-align: left;
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+th, td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+colgroup col:first-child {
+    width: 40%; /* 左側の列を狭く */
+}
+colgroup col:last-child {
+    width: 60%; /* 右側の列を広く */
+}

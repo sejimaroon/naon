@@ -1,0 +1,72 @@
+#voice-profile {
+  margin-top: 80px;
+  padding: 0;
+}
+.voice--container {
+  width: 100%;
+  height: 500px;
+  padding: 0 5%;
+  gap: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+}
+.voice_img {
+  position: relative;
+  width: 45%;
+  height: 280px;
+  margin-right: 5%;
+  background-size: cover;
+  background-position: center;
+  float: left;
+}
+.voice-heading {
+  font-size: 20px;
+}
+.vstaff-1 {
+  background-image: url("../img/voice1-img.jpg")
+}
+.vstaff-2 {
+  background-image: url("../img/voice2-img.jpg")
+}
+.vstaff-3 {
+  background-image: url("../img/voice3-img.jpg")
+}
+.voice--container-image {
+  @include bgCenter;
+  width: 45%;
+  height: 72%;
+
+}
+.voice--container-text {
+  width: 50%;
+  h2 {
+    font-size:24px;
+  }
+  h3 {
+    margin-top: 20px;
+  }
+}
+@media(max-width: 768px) {
+  .voice--container {
+    flex-direction: column;
+  }
+  .voice--container-image {
+    width: 90%;
+    height: 66%;
+  }
+  .voice--container-text {
+    width: 90%;
+    text-align: center;
+  }
+  .voice-flex {
+    flex-direction: column;
+  }
+}
+@media(max-width: 400px) {
+  .voice_img {
+    width: 100%;
+    margin: 0 0 30px 0;
+  }
+}

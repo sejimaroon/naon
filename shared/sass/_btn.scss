@@ -4,32 +4,119 @@
     border: 1px solid #000;
     border-radius: 25px;
     margin: 50px auto 0;
+    cursor: pointer;
 }
+
 .btn--white:hover {
     background-color: #ccc;
     transition: .3s;
 }
+.btn--white2 {
+    @include btnDefault;
+    background-color: #fff;
+    color: #333;
+    margin: 0 auto;
+    width: 32%;
+    border: 2px solid #000;
+    cursor: pointer;
+}
+.btn--white2:hover {
+    opacity: .7;
+    transition: .3s;
+}
+.btn--white2::after {
+    @include fontAwesome("\f054");
+    position: absolute;
+    right: 20px;
+}
+.w2btn-area {
+    width: 100%;
+    margin: 50px auto 0;
+    text-align: center;
+}
+
 .btn--black {
     @include btnDefault;
     background-color: #333;
     color: #fff;
-    margin-top: 50px;
-
-}
-#section__recruit > .btn--black {
-    width: calc(50% - 35px);
-    margin: 30px 0 0 0;
+    margin: 30px 0;
+    cursor: pointer;
 }
 .btn--black:hover {
     opacity: .7;
     transition: .3s;
 }
-.flexbox50 > .btn--black {
+.btn--black::after {
+    @include fontAwesome("\f054");
+    position: absolute;
+    right: 20px;
+}
+.text-btn-ceo,
+.text-btn-staff {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    margin:  0;
+    cursor: pointer;
+}
+.text-btn-ceo {
+    width: 120px;
+}
+.text-btn-staff {
+    width: 84px;
+}
+.text-btn-ceo:hover,
+.text-btn-staff:hover {
+    opacity: .7;
+    transition: .3s;
+}
+.text-btn-ceo::after,
+.text-btn-staff::after {
+    @include fontAwesome("\f054");
+    position: absolute;
+    right: -20px;
+}
+#section__recruit>.btn--black {
+    width: calc(50% - 35px);
+    margin: 30px 0;
+}
+
+
+
+.flexbox50>.btn--black {
     text-align: left;
     margin-left: 0;
 }
-.btn--flex {
-    gap:20px;
-    display: flex;
 
+.btn--flex {
+    gap: 20px;
+    display: flex;
 }
+
+.btn__three--flex {
+    justify-content: space-between;
+    display: flex;
+    gap: 12px;
+
+    .btn--black {
+        width: calc(100% / 3);
+    }
+}
+
+@media(max-width: 768px) {
+    .btn__three--flex {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+        .btn--black {
+            margin: 12px auto;
+            width: 50%;
+        }
+        .btn--white2 {
+            width: 250px;
+        }
+    }

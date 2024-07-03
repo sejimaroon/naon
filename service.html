@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>株式会社NAON</title>
+    <title>事業紹介 | 株式会社NAON</title>
     <link rel="stylesheet" href="./shared/css/all.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
@@ -81,68 +81,61 @@
             </ul>
         </nav>
     </header>
-    <div id="hero__image">
-        <p id="hero__text">お問い合わせ</p>
+    <div id="service__mv" class="mv">
+        <div class="mv__text">事業紹介</div>
     </div>
     <main>
-        <form action="submit-contact-form.php" method="POST" class="contact-form">
-        <div class="form-group">
-            <label for="contact-type">お問い合わせの種類<span class="required-mark">*</span></label><br>
-            <input type="radio" id="inquiry-type1" name="inquiry-type" value="一般お問い合わせ">
-            <label for="inquiry-type1">一般お問い合わせ</label><br>
-            <input type="radio" id="inquiry-type2" name="inquiry-type" value="商品について">
-            <label for="inquiry-type2">事業について</label><br>
-            <input type="radio" id="inquiry-type3" name="inquiry-type" value="その他">
-            <label for="inquiry-type3">その他</label><br>
-        </div>
-        <div class="form-group">
-            <label for="name">名前<span class="required-mark">*</span></label><br>
-            <input type="text" id="name" name="name" required><br>
-        </div>
-        <div class="form-group">
-            <label for="kana">フリガナ<span class="required-mark">*</span></label><br>
-            <input type="text" id="kana" name="kana" required><br>
-        </div>
-        <div class="form-group">
-            <label for="company">会社名</label><br>
-            <input type="text" id="company" name="company"><br>
-        </div>
-        <div class="form-group">
-            <label for="email">メールアドレス<span class="required-mark">*</span></label><br>
-            <input type="email" id="email" name="email" required><br>
-        </div>
-        <div class="form-group">
-            <label for="phone">電話番号<span class="required-mark">*</span></label><br>
-            <input type="tel" id="phone" name="phone" required><br>
-        </div>
-        <div class="form-group">
-            <label>何を見て当社を知りましたか？<span class="required-mark">*</span></label><br>
-            <input type="checkbox" id="source1" name="source[]" value="ウェブサイト">
-            <label for="source1">ウェブサイト</label><br>
-            <input type="checkbox" id="source2" name="source[]" value="SNS">
-            <label for="source2">SNS</label><br>
-            <input type="checkbox" id="source3" name="source[]" value="口コミ">
-            <label for="source3">口コミ</label><br>
-            <input type="checkbox" id="source4" name="source[]" value="その他">
-            <label for="source4">その他</label><br>
-        </div>
-        <div class="form-group">
-            <label for="message">お問い合わせ内容<span class="required-mark">*</span></label><br>
-            <textarea id="message" name="message" rows="4" required></textarea><br>
-        </div>
-        <div class="form-group">
-            <input type="checkbox" id="privacy" name="privacy" required>
-            <label for="privacy"><a class="link-policy" href="policy.html">プライバシーポリシー</a>に同意する</label><br>
-        </div>
-        <div class="form-group">
-            <button type="submit">送信する</button>
-        </div>
-    </form>
-        <!--
-    <script src="https://ssl.form-mailer.jp/formfiles/js/embed.js"></script>
-    <div class="formmailer-embed" data-form-hash="b92d61e6826896" data-form-host="ssl.form-mailer.jp"></div>
-    -->
+        <nav class="row-nav-1">
+            <ul>
+                <li>
+                    <a href="top.html">HOME</a>
+                </li>
+                <li>
+                    ⇀
+                </li>
+                <li>
+                    事業紹介
+                </li>
+            </ul>
+        </nav>
+        <section class="basic--section">
+            <h2 class="basic__heading">
+                すべての女性をより高みへ
+            </h2>
+            <p class="mtb-50">
+                女性として産まれたことを誇りに、幸せに思いたい。<br>
+                同じ志を持ち活動するみなさんとつながり、そうして手に入れた知見によって貴女をより高みへと近づけます。
+            </p>
+            <div class="service-container">
+                <div class="service-box">
+                    <h3>ワークショップ</h3>
+                    <div class="service-img serviceimg-1"></div>
+                    <p>ジェンダー平等を学ぶワークショップを月2回開催します。</p>
+                </div>
+                <div class="service-box">
+                    <h3>トレーニング</h3>
+                    <div class="service-img serviceimg-2"></div>
+                    <p>ハラスメント防止のためのトレーニングによって世界からハラスメントの根絶を目指します。</p>
+                </div>
+                <div class="service-box">
+                    <h3>フェミニズム</h3>
+                    <div class="service-img serviceimg-3"></div>
+                    <p>著名なフェミニストの方をお呼びし交流の場を設けます。</p>
+                </div>
+            </div>
 
+
+        </section>
+
+        <section id="section__contact" class="mt-80">
+            <h2 class="s__heading -shadow">CONTACT</h2>
+            <p class="s__lead--text -shadow">
+                お問い合わせはこちらから<br>営業時間:9:00 ～ 18:00(土日祝祭日休)
+            </p>
+            <a class="btn--black" href="#">
+                お問い合わせ
+            </a>
+        </section>
     </main>
     <footer>
         <div class="footer-flex">
@@ -153,6 +146,7 @@
         </div>
     </footer>
     <script src="./shared/js/nav.js"></script>
+    <script src="./shared/js/questionbox.js"></script>
 </body>
 
 </html>

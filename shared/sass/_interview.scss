@@ -1,0 +1,17 @@
+#interview > .basic__heading {
+    text-align: left;
+    font-size: 18px;
+}
+#interview p {
+    margin-top: 50px;
+    font-size: 14px;
+}
+@media(max-width: 768px) {
+    #interview > .basic__heading {
+
+        font-size: 16px;
+    }
+    #interview p {
+        font-size: 12px;
+    }
+}
