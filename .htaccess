@@ -1,7 +1,8 @@
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    # POSTメソッドが許可されているか確認
-    <Limit GET POST PUT DELETE>
-        Allow from all
-    </Limit>
-</IfModule>
+<Directory "/">
+    Options Indexes FollowSymLinks
+    AllowOverride None
+    Require all granted
+    <LimitExcept GET POST>
+        Deny from all
+    </LimitExcept>
+</Directory>
