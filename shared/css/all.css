@@ -1297,8 +1297,9 @@ footer a:hover {
             flex-direction: column;
     margin: 0 auto;
   }
-  .btn--black {
+  .btn__three--flex .btn--black {
     margin: 12px auto;
+    width: 250px;
   }
   .btn--white2 {
     width: 250px;
