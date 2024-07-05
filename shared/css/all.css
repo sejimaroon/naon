@@ -1299,10 +1299,17 @@ footer a:hover {
   }
   .btn--black {
     margin: 12px auto;
-    width: 50%;
   }
   .btn--white2 {
     width: 250px;
+  }
+  .btn--black::after {
+    line-height: 1;
+    font-family: "Font Awesome 5 Free";
+    content: "\f054";
+    font-weight: 900;
+    position: absolute;
+    right: 10px;
   }
 }
 form {
