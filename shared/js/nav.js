@@ -70,3 +70,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    const navToggle = document.getElementById('nav-toggle');
+    const bars = document.querySelectorAll('.bar');
+
+    navToggle.addEventListener('click', function () {
+        bars.forEach(bar => bar.classList.toggle('transform'));
+    });
+});
