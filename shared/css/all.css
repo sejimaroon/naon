@@ -671,10 +671,13 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  align-items: center;
   height: 80px;
   margin: 0;
   padding: 0 10px;
@@ -703,6 +706,12 @@ header {
 #nav__list--pc .submenu {
   display: none;
   position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   left: 0;
   top: 100%;
   /* Adjust this to position the submenu right below the main menu item */
@@ -719,9 +728,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  padding-top: 8px;
   position: relative;
   border: 1px solid #fff;
   height: 40px;
@@ -730,12 +737,27 @@ header {
   color: #fff;
   text-decoration: none;
 }
+#nav__list--pc .submenu li i {
+  margin-top: -8px;
+}
 #nav__list--pc .submenu li:hover {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .hamburger {
   display: none;
+}
+
+.pc-mainmenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (max-width: 768px) {
