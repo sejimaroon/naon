@@ -49,7 +49,7 @@
 .btn--black::after {
     @include fontAwesome("\f054");
     position: absolute;
-    right: 20px;
+    right: 10px;
 }
 .text-btn-ceo,
 .text-btn-staff {
